@@ -83,7 +83,7 @@ while(contador > 0 || contador2 > 0) {
                 
                 result2 = numerodivi2;
                 
-                contador = contador - 1;
+                
             }
             
             
@@ -93,7 +93,7 @@ while(contador > 0 || contador2 > 0) {
                 
                 result = numerodivi1;
                 
-                contador = contador - 1;
+                
                 
             
             }
@@ -103,6 +103,8 @@ while(contador > 0 || contador2 > 0) {
             answer = result2 / result;
             
             console.log(answer);
+            
+            contador = contador - 1;
             
             
         }
