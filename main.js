@@ -49,7 +49,7 @@ while (attempts > 0) {
         
     }
     else if (contador2 != "none" || contador2 != "nenhum") {
-        alert("desculpe, não entendi sua resposta, dica: se não deseja utilizar contas de adição e subtração, e perguntar a quantidade de somar ou subtrair,  apenas digite none ou nenhum!");
+        alert("desculpe, não entendi sua resposta, tente novamente. dica: se não deseja utilizar contas de adição e subtração, e perguntar a quantidade de somar ou subtrair,  apenas digite none ou nenhum");
         attempts = attempts - 1;    
     }
     
