@@ -120,6 +120,8 @@ while (attempts > 0) {
                     let numerodivi2 = parseFloat(prompt("digite o primeiro numero..."));
                     
                     result2 = numerodivi2;
+
+                    contador = contador - 1;
                     
                     
                 }
@@ -130,6 +132,8 @@ while (attempts > 0) {
                     let numerodivi1 = parseFloat(prompt("digite o segundo numero..."));
                     
                     result = numerodivi1;
+
+                    contador = contador - 1;
                     
                     
                     
@@ -156,9 +160,9 @@ while (attempts > 0) {
 
 
                 if(contador2 > 0) {
-                    let numerosoma1 = parseFloat(prompt("digite o numero"));
+                    let numerosoma = parseFloat(prompt("digite o numero"));
 
-                    result = result += numerosoma1;
+                    result = result += numerosoma;
 
                     alert("seu resultado é " + result + ".");
 
@@ -183,7 +187,11 @@ while (attempts > 0) {
 
             if (operador == "-") {
                 if (contador2 > 0) {
+                    
                     let numeromenos = parseFloat(prompt("digite o numero"));
+                    result -= numeromenos;
+                    
+                    result = result += numeromenos;
 
                     
                 }
