@@ -1,4 +1,3 @@
-
 // MIT License
 
 // Copyright (c) 2024 LuisFelipe1911
@@ -22,98 +21,193 @@
 // SOFTWARE.
 
 
-let qtd = prompt("digite a quantidade que deseja somar ou subtrair...");
-let operador = prompt("digite qual operador deseja usar, digite como simbolos...");
-let contador = 2;
-let contador2 = qtd;
+
+
+
+let attempts = 10;
+
 let result = 0;
 let result2 = 0;
-
 let answer = 0;
+let contador = 3;
 
 
-while(contador > 0 || contador2 > 0) {
-    if (contador2 == "none" || contador == "nenhum") {
-        if (operador == "*") {
-            if (contador == 2) {
-                let numeromult2 = parseFloat(prompt("digite o  primeiro numero.."));
-                  
-                result2 = numeromult2;
-                
-            }
-                  
-                  
-            if (contador == 1) { 
-                let numeromult1 = parseFloat(prompt("digite o segundo numero.."));   
-                result = numeromult1;
-                  
-            }
-        
-                  
-        
-                  
-       
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              answer = result2 * result;
-              
-              console.log("seu resultado é " + answer + ".");
-              
-              
-              
-              contador = contador - 1;
-        }
-        
-        
-        
-        
-        if(operador == "/") {
-            
-            
-            if (contador == 2) {
-                let numerodivi2 = parseFloat(prompt("digite o primeiro numero..."));
-                
-                result2 = numerodivi2;
-                
-                
-            }
-            
-            
-            
-            if (contador == 1) {
-                let numerodivi1 = parseFloat(prompt("digite o segundo numero..."));
-                
-                result = numerodivi1;
-                
-                
-                
-            
-            }
-            
-            
-            
-            answer = result2 / result;
-            
-            console.log(answer);
-            
-            contador = contador - 1;
-            
-            
-        }
+while (attempts > 0) {
+    qtd = prompt("digite a quantidade que deseja somar ou subtrair!");
+    
 
 
-    }  
+    let contador2 = qtd;
 
     
+    
+    operador = undefined;
+
+    if (contador2 == "none" || contador2 == "nenhum" || contador2 > 0) {
+        operador = prompt("digite qual operador deseja usar, digite como simbolos...");
+
+        
+    }
+    else if (contador2 != "none" || contador2 != "nenhum") {
+        alert("desculpe, não entendi sua resposta, dica: se não deseja utilizar contas de adição e subtração, e perguntar a quantidade de somar ou subtrair,  apenas digite none ou nenhum!");
+        attempts = attempts - 1;    
+    }
+    
+
+    else if(attempts == 0 || attempts < 0) {
+        attempts = 10;
+    }
+    
+    while(contador > 0 || contador2 == "none" || contador2 == "nenhum" || contador2 > 0) {
+        if (contador2 == "none" || contador2 > 0) {
+            if (operador == "*") {
+                if (contador == 3) {
+                    let numeromult2 = parseFloat(prompt("digite o  primeiro numero.."));
+                      
+                    result2 = numeromult2;
+
+                    contador = contador - 1;
+                    
+                }
+                      
+                      
+                if (contador == 2) { 
+                    let numeromult1 = parseFloat(prompt("digite o segundo numero.."));   
+                    result = numeromult1;
+
+                    contador = contador - 1;
+                      
+                }
+
+                if (contador == 1) {
+                    answer = result2 * result;
+
+                  
+                  
+                    alert("seu resultado é " + answer + ".");
+
+                    contador = contador - 1;
+                }
+            
+                      
+            
+                      
+           
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+            }
+            
+            
+            
+            
+            if(operador == "/") {
+                
+                
+                if (contador == 3) {
+                    let numerodivi2 = parseFloat(prompt("digite o primeiro numero..."));
+                    
+                    result2 = numerodivi2;
+                    
+                    
+                }
+                
+                
+                
+                if (contador == 2) {
+                    let numerodivi1 = parseFloat(prompt("digite o segundo numero..."));
+                    
+                    result = numerodivi1;
+                    
+                    
+                    
+                
+                }
+
+                if (contador == 1) {
+                    answer = result2 / result;
+                
+                    alert("seu resultado é " + answer + ".");
+                    
+                    contador = contador - 1;
+                }
+                
+                
+                
+                
+                
+                
+            }
+
+
+            if (operador == "+") {
+
+
+                if(contador2 > 0) {
+                    let numerosoma1 = parseFloat(prompt("digite o numero"));
+
+                    result = result += numerosoma1;
+
+                    alert("seu resultado é " + result + ".");
+
+                    contador2 = contador2 - 1;
+
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+            if (operador == "-") {
+                if (contador2 > 0) {
+                    let numeromenos = parseFloat(prompt("digite o numero"));
+
+                    
+                }
+            }
+    
+    
+        }
+        
+    
+        
+    }
 }
+
+
+
+
+
+
+// while(attempts > 0) {
+    
+// }
+
+
+
 
 answer = 0;
 result = 0;
