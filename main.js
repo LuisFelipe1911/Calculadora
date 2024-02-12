@@ -189,9 +189,7 @@ while (attempts > 0) {
                 if (contador2 > 0) {
                     
                     let numeromenos = parseFloat(prompt("digite o numero"));
-                    result -= numeromenos;
                     
-                    result = result += numeromenos;
 
                     
                 }
